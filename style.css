@@ -1,0 +1,157 @@
+/* General Settings */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Shade&display=swap');
+
+body {
+    font-family: 'Bungee Hairline', sans-serif !important ;
+    background-color: #D8D9CF;
+    color: #3E3838;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+p {
+    font-weight: bold;
+}
+
+/* Mode Selection Screen */
+.mode-selection {
+    margin-top: 50px;
+}
+
+.mode-btn {
+    padding: 12px 25px;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-size: 1.1rem;
+    margin: 12px;
+    color: #FFFFFF;
+    background-color: #3E3838;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mode-btn:hover {
+    background-color: #3E3838;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Game Area */
+.game-container {
+    text-align: center;
+}
+
+.game-title {
+    font-family: "Bungee Shade", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #3E3838;
+    margin-bottom: 20px;
+}
+
+/* Game Status */
+.game-status {
+    font-size: 2rem;
+    color: #373737;
+    margin: 20px 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
+    font-size: 3rem;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.cell.X {
+    background-color: #B29F7A;
+    color: #D8D9CF;
+}
+
+.cell.O {
+    background-color: #8C6A5D;
+    color: #D8D9CF;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #3E3838;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3E3838;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Reset and Back Buttons */
+.reset-btn, .back-btn {
+    margin-top: 20px;
+}
+
+/* Light Effect */
+.light-effect-x, .light-effect-O {
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.light-effect-x {
+    left: 0;
+    background: linear-gradient(to right, #B29F7A, #D8D9CF);
+}
+
+.light-effect-O {
+    right: 0;
+    background: linear-gradient(to left, #8C6A5D, #D8D9CF);
+}

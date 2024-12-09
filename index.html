@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="game-container">
+
+    <!-- Mode Selection Screen: This screen allows the user to choose between single-player and two-player game modes. -->
+    <div class="mode-selection">
+      <h1 class="game-title">Tic-Tac-Toe</h1>
+      <p>Choose a mode:</p>
+      <button class="mode-btn" id="one-player">1 Player</button>
+      <button class="mode-btn" id="two-players">2 Players</button>
+    </div>
+
+    <!-- Game Board: The main area where the tic-tac-toe game is played. -->
+    <div class="game-board hidden">
+      <h1 class="game-title">Tic-Tac-Toe</h1>
+      <p class="game-status"></p>
+      <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+
+      <!-- Reset Button: Clears the game board and starts a new game. -->
+      <button class="reset-btn">Restart</button>
+      <!-- Back Button: Returns the user to the mode selection screen. -->
+      <button class="back-btn">Back</button>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
